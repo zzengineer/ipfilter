@@ -31,7 +31,7 @@ function filter_ip($ip, $rules, array $exclude_ips = array()) {
 }
 
 /* helper, matching ips on difren rules */
-function match_ip($ip, $rule) {
+function matchip($ip, $rule) {
 
 	/* match against x.x.x.x */	
 	if($ip === $rule) return true;
