@@ -3,9 +3,9 @@
 define('IPFILTER_ACTIVE', true);
 
 /* match ips base on the rules */
-function match_ip($ip, $rules, array $exclude_ips = array()) {
+function match_ip($ip, $rules, array $include_ips = array()) {
 
-	return !filter_ip($ip, $rules, $exclude_ips);
+	return !filter_ip($ip, $rules, $include_ips);
 }
 
 /* filter ips not matching any rules */
